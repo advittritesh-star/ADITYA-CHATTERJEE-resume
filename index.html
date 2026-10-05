@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Chatterjee - Resume</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 50%, #dbeafe 100%);
+            background-attachment: fixed;
+            color: #1f2937;
+        }
+
+        /* Navy Blue Gradient Text Class */
+        .navy-gradient-text {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Glassmorphism Card Style */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Glassmorphism Interactive Hover Effect */
+        .glass-hover:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 14px 28px rgba(30, 58, 138, 0.12), 0 10px 10px rgba(30, 58, 138, 0.06);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        /* Print CSS rules for crisp PDF exports */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .glass-card {
+                background: #ffffff !important;
+                border: 1px solid #e2e8f0 !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+            }
+            .navy-gradient-text {
+                background: none !important;
+                -webkit-text-fill-color: #0f172a !important;
+                color: #0f172a !important;
+            }
+            .page-container {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            a {
+                text-decoration: none !important;
+                color: inherit !important;
+            }
+        }
+    </style>
+</head>
+<body class="py-8 px-4 sm:px-6 lg:px-8 min-h-screen">
+
+    <div class="max-w-5xl mx-auto mb-4 flex justify-end no-print">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-medium px-4 py-2 rounded-xl shadow-lg transition-all duration-200 cursor-pointer text-sm">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+    </div>
+
+    <!-- MAIN RESUME CARD -->
+    <div class="max-w-5xl mx-auto glass-card rounded-3xl overflow-hidden page-container border border-white/80">
+        
+        <!-- HEADER / EXECUTIVE BANNER -->
+        <header class="bg-gradient-to-r from-slate-900 via-blue-950 to-indigo-950 text-white p-8 sm:p-10 relative">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-2">
+                        ADITYA CHATTERJEE
+                    </h1>
+                    <div class="inline-block bg-white/10 backdrop-blur-md text-indigo-200 border border-white/20 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider uppercase">
+                        CHARTERED ACCOUNTANT
+                    </div>
+                </div>
+
+                <!-- CONTACT INFORMATION BADGES -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2.5 text-xs text-slate-300 w-full md:w-auto">
+                    <div class="flex items-center gap-2.5 glass-hover p-1.5 rounded-lg transition-all">
+                        <span class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center text-indigo-300">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span>+91 XXX-XXX-XXXX</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 glass-hover p-1.5 rounded-lg transition-all">
+                        <span class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center text-indigo-300">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <a href="mailto:carijit@work.com" class="hover:text-white transition-colors">carijit@work.com</a>
+                    </div>
+                    <div class="flex items-center gap-2.5 glass-hover p-1.5 rounded-lg transition-all">
+                        <span class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center text-indigo-300">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        <a href="https://linkedin.com/adityachatterjee" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">linkedin.com/adityachatterjee</a>
+                    </div>
+                    <div class="flex items-center gap-2.5 glass-hover p-1.5 rounded-lg transition-all">
+                        <span class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center text-indigo-300">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>West Bengal, India</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TWO COLUMN LAYOUT -->
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+            
+            <!-- LEFT SIDEBAR COLUMN (35%) -->
+            <aside class="lg:col-span-4 bg-slate-50/50 p-6 sm:p-8 border-r border-slate-200/60 flex flex-col gap-8">
+                
+                <!-- SKILLS SECTION -->
+                <section>
+                    <div class="flex items-center gap-2.5 pb-2 mb-4 border-b-2 border-indigo-900">
+                        <i class="fa-solid fa-microchip text-indigo-600 text-sm"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider navy-gradient-text">SKILLS</h2>
+                    </div>
+                    
+                    <!-- Technical Skills -->
+                    <div class="mb-5">
+                        <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Technical Skills</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">Financial reporting</span>
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">Tax planning</span>
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">Auditing</span>
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">Compliance</span>
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">Tally proficiency</span>
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">QuickBooks</span>
+                            <span class="glass-card glass-hover bg-indigo-50/80 text-indigo-900 border border-indigo-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">MS Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="mb-5">
+                        <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Soft Skills</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="glass-card glass-hover text-slate-800 text-xs px-2.5 py-1 rounded-lg font-medium">Analytical thinking</span>
+                            <span class="glass-card glass-hover text-slate-800 text-xs px-2.5 py-1 rounded-lg font-medium">Attention to detail</span>
+                            <span class="glass-card glass-hover text-slate-800 text-xs px-2.5 py-1 rounded-lg font-medium">Time management</span>
+                            <span class="glass-card glass-hover text-slate-800 text-xs px-2.5 py-1 rounded-lg font-medium">Communication</span>
+                            <span class="glass-card glass-hover text-slate-800 text-xs px-2.5 py-1 rounded-lg font-medium">Teamwork</span>
+                            <span class="glass-card glass-hover text-slate-800 text-xs px-2.5 py-1 rounded-lg font-medium">Problem-solving</span>
+                        </div>
+                    </div>
+
+                    <!-- Software -->
+                    <div>
+                        <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Software</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="glass-card glass-hover bg-emerald-50/80 text-emerald-900 border border-emerald-200/80 text-xs px-2.5 py-1 rounded-lg font-medium"><i class="fa-solid fa-file-excel mr-1 text-emerald-600"></i> MS Excel</span>
+                            <span class="glass-card glass-hover bg-blue-50/80 text-blue-900 border border-blue-200/80 text-xs px-2.5 py-1 rounded-lg font-medium"><i class="fa-solid fa-file-word mr-1 text-blue-600"></i> MS Word</span>
+                            <span class="glass-card glass-hover bg-amber-50/80 text-amber-900 border border-amber-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">Tally</span>
+                            <span class="glass-card glass-hover bg-cyan-50/80 text-cyan-900 border border-cyan-200/80 text-xs px-2.5 py-1 rounded-lg font-medium">QuickBooks</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION SECTION -->
+                <section>
+                    <div class="flex items-center gap-2.5 pb-2 mb-4 border-b-2 border-indigo-900">
+                        <i class="fa-solid fa-graduation-cap text-indigo-600 text-sm"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider navy-gradient-text">EDUCATION</h2>
+                    </div>
+
+                    <div class="space-y-4 text-xs">
+                        <div class="glass-card glass-hover p-3.5 rounded-xl border border-slate-200/70 relative pl-4 border-l-4 border-l-indigo-600">
+                            <div class="font-bold text-slate-900 text-sm">Chartered Accountancy (CA)</div>
+                            <div class="text-slate-600 font-medium">Institute of Chartered Accountants of India (ICAI)</div>
+                            <div class="text-indigo-600 font-semibold mt-0.5">2018 – 2023</div>
+                        </div>
+
+                        <div class="glass-card glass-hover p-3.5 rounded-xl border border-slate-200/70 relative pl-4 border-l-4 border-l-slate-400">
+                            <div class="font-bold text-slate-900 text-sm">Bachelor of Commerce (B.COM)</div>
+                            <div class="text-slate-600 font-medium">Murshidabad College, West Bengal</div>
+                            <div class="text-slate-500 font-medium mt-0.5">Year: 2024</div>
+                            <div class="inline-block mt-1 bg-slate-200/80 text-slate-800 text-[11px] px-2.5 py-0.5 rounded-md font-semibold">
+                                CGPA/Percentage: 80%
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATIONS & TRAININGS SECTION -->
+                <section>
+                    <div class="flex items-center gap-2.5 pb-2 mb-4 border-b-2 border-indigo-900">
+                        <i class="fa-solid fa-certificate text-indigo-600 text-sm"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider navy-gradient-text">CERTIFICATIONS & TRAININGS</h2>
+                    </div>
+
+                    <ul class="space-y-2.5 text-xs text-slate-700">
+                        <li class="glass-card glass-hover p-3 rounded-xl flex items-start gap-2.5">
+                            <i class="fa-solid fa-award text-indigo-600 mt-0.5 text-sm"></i>
+                            <div>
+                                <span class="font-semibold text-slate-900 block">IFRS Certification</span>
+                                <span class="text-slate-500">Internshala, 2020</span>
+                            </div>
+                        </li>
+                        <li class="glass-card glass-hover p-3 rounded-xl flex items-start gap-2.5">
+                            <i class="fa-solid fa-award text-indigo-600 mt-0.5 text-sm"></i>
+                            <div>
+                                <span class="font-semibold text-slate-900 block">GST Certification</span>
+                                <span class="text-slate-500">Internshala, 2018</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+            </aside>
+
+            <!-- RIGHT MAIN CONTENT COLUMN (65%) -->
+            <main class="lg:col-span-8 p-6 sm:p-8 flex flex-col gap-8">
+                
+                <!-- PROFESSIONAL SUMMARY SECTION -->
+                <section>
+                    <div class="flex items-center gap-2.5 pb-2 mb-3 border-b-2 border-indigo-900">
+                        <i class="fa-solid fa-user-tie text-indigo-600 text-sm"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider navy-gradient-text">PROFESSIONAL SUMMARY</h2>
+                    </div>
+                    <div class="glass-card glass-hover p-4 rounded-xl">
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                            Recent Chartered Accountant (CA) graduate with a solid academic foundation in financial reporting, auditing, and taxation. Eager to apply theoretical knowledge to practical experience in a challenging and growth-oriented environment. Dedicated to contributing to organizational success by maintaining compliance, optimizing financial processes, and providing valuable insights. Looking for an opportunity to kickstart my career and further develop my accounting expertise.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- INTERNSHIP & ARTICLESHIP EXPERIENCE SECTION -->
+                <section>
+                    <div class="flex items-center gap-2.5 pb-2 mb-4 border-b-2 border-indigo-900">
+                        <i class="fa-solid fa-briefcase text-indigo-600 text-sm"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider navy-gradient-text">INTERNSHIP & ARTICLESHIP EXPERIENCE</h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="glass-card glass-hover rounded-2xl p-5 border border-slate-200/80">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                                <h3 class="text-base font-bold text-slate-900">Articleship Trainee</h3>
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 bg-indigo-50/90 border border-indigo-100 px-2.5 py-1 rounded-lg w-fit">
+                                    <i class="fa-regular fa-calendar"></i> July 2021 – 2023
+                                </span>
+                            </div>
+                            <div class="text-xs font-semibold text-slate-600 mb-4 flex items-center gap-1.5">
+                                <i class="fa-solid fa-building text-slate-400"></i> MTM Associates, Kolkata
+                            </div>
+
+                            <ul class="space-y-2.5 text-xs text-slate-700">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-indigo-500 mt-0.5 text-xs"></i>
+                                    <span>Assisted in preparing and reviewing financial statements in compliance with Indian GAAP.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-indigo-500 mt-0.5 text-xs"></i>
+                                    <span>Supported tax return preparation and filing (Income Tax, GST), ensuring regulatory compliance.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-indigo-500 mt-0.5 text-xs"></i>
+                                    <span>Participated in auditing processes for small and medium-sized businesses, identifying areas for process improvement.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-indigo-500 mt-0.5 text-xs"></i>
+                                    <span>Gained hands-on experience in using accounting software like Tally and QuickBooks for bookkeeping and reconciliations.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-indigo-500 mt-0.5 text-xs"></i>
+                                    <span>Assisted in preparing management reports, including balance sheets, profit and loss accounts, and cash flow statements.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXTRACURRICULAR ACTIVITIES SECTION -->
+                <section>
+                    <div class="flex items-center gap-2.5 pb-2 mb-4 border-b-2 border-indigo-900">
+                        <i class="fa-solid fa-users text-indigo-600 text-sm"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider navy-gradient-text">EXTRACURRICULAR ACTIVITIES</h2>
+                    </div>
+
+                    <ul class="space-y-2.5 text-xs text-slate-700">
+                        <li class="glass-card glass-hover p-3.5 rounded-xl flex items-start gap-2.5">
+                            <i class="fa-solid fa-angle-right text-indigo-600 mt-0.5"></i>
+                            <span>Member of the [College/University] Accounting Society</span>
+                        </li>
+                        <li class="glass-card glass-hover p-3.5 rounded-xl flex items-start gap-2.5">
+                            <i class="fa-solid fa-angle-right text-indigo-600 mt-0.5"></i>
+                            <span>Participated in seminars and workshops on taxation, auditing, and financial modeling</span>
+                        </li>
+                        <li class="glass-card glass-hover p-3.5 rounded-xl flex items-start gap-2.5">
+                            <i class="fa-solid fa-angle-right text-indigo-600 mt-0.5"></i>
+                            <span>Volunteered for financial literacy programs and tax filing assistance</span>
+                        </li>
+                    </ul>
+                </section>
+
+            </main>
+        </div>
+
+        <!-- FOOTER BAR -->
+        <footer class="bg-slate-900 text-slate-400 text-[11px] py-3.5 px-8 text-center border-t border-slate-800">
+            Aditya Chatterjee — Professional Chartered Accountant Resume
+        </footer>
+    </div>
+
+</body>
+</html>
